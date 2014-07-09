@@ -19,6 +19,7 @@ profile
 DerivedData
 .idea/
 *.hmap
+xcshareddata
 
 # ------------- Android/Eclipse Development -------------
 # built application files
