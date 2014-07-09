@@ -29,14 +29,14 @@
 
 /* Begin PBXFileReference section */
 		477C8040180EDF8B00C1F2E5 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = ../../ShinobiCharts.framework; sourceTree = "<group>"; };
-		7219C9091785C2B200D19252 /* ColumnSeries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColumnSeries.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7219C9091785C2B200D19252 /* IndividualPointStyling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndividualPointStyling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7219C90C1785C2B200D19252 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7219C90E1785C2B200D19252 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7219C9101785C2B200D19252 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7219C9141785C2B200D19252 /* ColumnSeries-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColumnSeries-Info.plist"; sourceTree = "<group>"; };
+		7219C9141785C2B200D19252 /* IndividualPointStyling-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IndividualPointStyling-Info.plist"; sourceTree = "<group>"; };
 		7219C9161785C2B200D19252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7219C9181785C2B200D19252 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7219C91A1785C2B200D19252 /* ColumnSeries-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColumnSeries-Prefix.pch"; sourceTree = "<group>"; };
+		7219C91A1785C2B200D19252 /* IndividualPointStyling-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IndividualPointStyling-Prefix.pch"; sourceTree = "<group>"; };
 		7219C91B1785C2B200D19252 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7219C91C1785C2B200D19252 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7219C91E1785C2B200D19252 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		7219C9001785C2B200D19252 = {
 			isa = PBXGroup;
 			children = (
-				7219C9121785C2B200D19252 /* ColumnSeries */,
+				7219C9121785C2B200D19252 /* IndividualPointStyling */,
 				7219C90B1785C2B200D19252 /* Frameworks */,
 				7219C90A1785C2B200D19252 /* Products */,
 			);
@@ -85,7 +85,7 @@
 		7219C90A1785C2B200D19252 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7219C9091785C2B200D19252 /* ColumnSeries.app */,
+				7219C9091785C2B200D19252 /* IndividualPointStyling.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7219C9121785C2B200D19252 /* ColumnSeries */ = {
+		7219C9121785C2B200D19252 /* IndividualPointStyling */ = {
 			isa = PBXGroup;
 			children = (
 				7219C91B1785C2B200D19252 /* AppDelegate.h */,
@@ -117,16 +117,16 @@
 				7219C92A1785C2B200D19252 /* ViewController_iPad.xib */,
 				7219C9131785C2B200D19252 /* Supporting Files */,
 			);
-			path = ColumnSeries;
+			path = IndividualPointStyling;
 			sourceTree = "<group>";
 		};
 		7219C9131785C2B200D19252 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7219C9141785C2B200D19252 /* ColumnSeries-Info.plist */,
+				7219C9141785C2B200D19252 /* IndividualPointStyling-Info.plist */,
 				7219C9151785C2B200D19252 /* InfoPlist.strings */,
 				7219C9181785C2B200D19252 /* main.m */,
-				7219C91A1785C2B200D19252 /* ColumnSeries-Prefix.pch */,
+				7219C91A1785C2B200D19252 /* IndividualPointStyling-Prefix.pch */,
 				7219C91E1785C2B200D19252 /* Default.png */,
 				7219C9201785C2B200D19252 /* Default@2x.png */,
 				7219C9221785C2B200D19252 /* Default-568h@2x.png */,
@@ -137,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7219C9081785C2B200D19252 /* ColumnSeries */ = {
+		7219C9081785C2B200D19252 /* IndividualPointStyling */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7219C92F1785C2B200D19252 /* Build configuration list for PBXNativeTarget "ColumnSeries" */;
+			buildConfigurationList = 7219C92F1785C2B200D19252 /* Build configuration list for PBXNativeTarget "IndividualPointStyling" */;
 			buildPhases = (
 				7219C9051785C2B200D19252 /* Sources */,
 				7219C9061785C2B200D19252 /* Frameworks */,
@@ -149,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = ColumnSeries;
-			productName = ColumnSeries;
-			productReference = 7219C9091785C2B200D19252 /* ColumnSeries.app */;
+			name = IndividualPointStyling;
+			productName = IndividualPointStyling;
+			productReference = 7219C9091785C2B200D19252 /* IndividualPointStyling.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +163,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = ShinobiControls;
 			};
-			buildConfigurationList = 7219C9041785C2B200D19252 /* Build configuration list for PBXProject "ColumnSeries" */;
+			buildConfigurationList = 7219C9041785C2B200D19252 /* Build configuration list for PBXProject "IndividualPointStyling" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7219C9081785C2B200D19252 /* ColumnSeries */,
+				7219C9081785C2B200D19252 /* IndividualPointStyling */,
 			);
 		};
 /* End PBXProject section */
@@ -301,9 +301,9 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../..";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ColumnSeries/ColumnSeries-Prefix.pch";
-				INFOPLIST_FILE = "ColumnSeries/ColumnSeries-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IndividualPointStyling/IndividualPointStyling-Prefix.pch";
+				INFOPLIST_FILE = "IndividualPointStyling/IndividualPointStyling-Info.plist";
+				PRODUCT_NAME = IndividualPointStyling;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -314,9 +314,9 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../..";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ColumnSeries/ColumnSeries-Prefix.pch";
-				INFOPLIST_FILE = "ColumnSeries/ColumnSeries-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IndividualPointStyling/IndividualPointStyling-Prefix.pch";
+				INFOPLIST_FILE = "IndividualPointStyling/IndividualPointStyling-Info.plist";
+				PRODUCT_NAME = IndividualPointStyling;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -324,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7219C9041785C2B200D19252 /* Build configuration list for PBXProject "ColumnSeries" */ = {
+		7219C9041785C2B200D19252 /* Build configuration list for PBXProject "IndividualPointStyling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7219C92D1785C2B200D19252 /* Debug */,
@@ -333,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7219C92F1785C2B200D19252 /* Build configuration list for PBXNativeTarget "ColumnSeries" */ = {
+		7219C92F1785C2B200D19252 /* Build configuration list for PBXNativeTarget "IndividualPointStyling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7219C9301785C2B200D19252 /* Debug */,
