@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TrafficLightColumnSeries.h"
 #import <ShinobiCharts/ShinobiCharts.h>
 
 @interface ViewController () <SChartDatasource>
@@ -15,7 +16,7 @@
 
 @implementation ViewController
 {
-    NSDictionary* _sales[2];
+    NSDictionary* _sales;
     ShinobiChart* _chart;
 }
 
@@ -23,8 +24,7 @@
 {
     [super viewDidLoad];
     
-    _sales[0] = @{@"Broccoli" : @5.65, @"Carrots" : @12.6, @"Mushrooms" : @8.4};
-    _sales[1] = @{@"Broccoli" : @4.35, @"Carrots" : @13.2, @"Mushrooms" : @4.6, @"Okra" : @0.6};
+    _sales = @{@"Broccoli" : @5.65, @"Carrots" : @12.6, @"Mushrooms" : @8.4, @"Okra" : @0.6};
 	
     // Create the chart
     CGFloat margin = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 10.0 : 50.0;
@@ -59,7 +59,7 @@
 #pragma mark - SChartDatasource methods
 
 - (NSInteger)numberOfSeriesInSChart:(ShinobiChart *)chart {
-    return 2;
+    return 1;
 }
 
 -(SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
@@ -69,14 +69,14 @@
 }
 
 - (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
-    return _sales[seriesIndex].allKeys.count;
+    return _sales.allKeys.count;
 }
 
 - (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
     SChartDataPoint *datapoint = [[SChartDataPoint alloc] init];
-    NSString* key = _sales[seriesIndex].allKeys[dataIndex];
+    NSString* key = _sales.allKeys[dataIndex];
     datapoint.xValue = key;
-    datapoint.yValue = _sales[seriesIndex][key];
+    datapoint.yValue = _sales[key];
     return datapoint;
 }
 
