@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		477C8041180EDF8B00C1F2E5 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477C8040180EDF8B00C1F2E5 /* ShinobiCharts.framework */; };
+		166740CD196DA37100B91C92 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166740CC196DA37100B91C92 /* ShinobiCharts.framework */; };
 		7219C90D1785C2B200D19252 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7219C90C1785C2B200D19252 /* UIKit.framework */; };
 		7219C90F1785C2B200D19252 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7219C90E1785C2B200D19252 /* Foundation.framework */; };
 		7219C9111785C2B200D19252 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7219C9101785C2B200D19252 /* CoreGraphics.framework */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		477C8040180EDF8B00C1F2E5 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = ../../ShinobiCharts.framework; sourceTree = "<group>"; };
+		166740CC196DA37100B91C92 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = Library/Frameworks/ShinobiCharts.framework; sourceTree = DEVELOPER_DIR; };
 		7219C9091785C2B200D19252 /* IndividualPointStyling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndividualPointStyling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7219C90C1785C2B200D19252 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7219C90E1785C2B200D19252 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,11 +58,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166740CD196DA37100B91C92 /* ShinobiCharts.framework in Frameworks */,
 				86F69A301844B63400B5BC77 /* libc++.dylib in Frameworks */,
 				74B942E017ABDE070033E12E /* CoreText.framework in Frameworks */,
 				7219C9371785C2DB00D19252 /* Security.framework in Frameworks */,
 				7219C9351785C2D400D19252 /* QuartzCore.framework in Frameworks */,
-				477C8041180EDF8B00C1F2E5 /* ShinobiCharts.framework in Frameworks */,
 				7219C9331785C2CE00D19252 /* OpenGLES.framework in Frameworks */,
 				7219C90D1785C2B200D19252 /* UIKit.framework in Frameworks */,
 				7219C90F1785C2B200D19252 /* Foundation.framework in Frameworks */,
@@ -93,8 +93,8 @@
 		7219C90B1785C2B200D19252 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				166740CC196DA37100B91C92 /* ShinobiCharts.framework */,
 				86F69A2F1844B63400B5BC77 /* libc++.dylib */,
-				477C8040180EDF8B00C1F2E5 /* ShinobiCharts.framework */,
 				74B942DF17ABDE070033E12E /* CoreText.framework */,
 				7219C9321785C2CE00D19252 /* OpenGLES.framework */,
 				7219C9361785C2DB00D19252 /* Security.framework */,
@@ -299,7 +299,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../..";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../..",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IndividualPointStyling/IndividualPointStyling-Prefix.pch";
 				INFOPLIST_FILE = "IndividualPointStyling/IndividualPointStyling-Info.plist";
@@ -312,7 +315,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../..";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../..",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IndividualPointStyling/IndividualPointStyling-Prefix.pch";
 				INFOPLIST_FILE = "IndividualPointStyling/IndividualPointStyling-Info.plist";
