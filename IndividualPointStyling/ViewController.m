@@ -63,8 +63,19 @@
 }
 
 -(SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
-    SChartColumnSeries *columnSeries = [[SChartColumnSeries alloc] init];
-    columnSeries.title = index == 0 ? @"2011" : @"2012";
+    TrafficLightColumnSeries *columnSeries = [TrafficLightColumnSeries new];
+    
+    /*
+     We won't actually see the purple color in the series as we have overwritten
+     the style in the TrafficLightColumnSeries.
+     
+     We will however see it in the legend as this is the property it reads from
+     to decide what color to render its symbols.
+     */
+    columnSeries.style.areaColor = [UIColor purpleColor];
+    
+    columnSeries.selectionMode = SChartSelectionPoint;
+    
     return columnSeries;
 }
 
