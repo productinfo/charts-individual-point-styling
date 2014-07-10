@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		166740CD196DA37100B91C92 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166740CC196DA37100B91C92 /* ShinobiCharts.framework */; };
+		166740D1196ECC8B00B91C92 /* TrafficLightColumnSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 166740D0196ECC8B00B91C92 /* TrafficLightColumnSeries.m */; };
 		7219C90D1785C2B200D19252 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7219C90C1785C2B200D19252 /* UIKit.framework */; };
 		7219C90F1785C2B200D19252 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7219C90E1785C2B200D19252 /* Foundation.framework */; };
 		7219C9111785C2B200D19252 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7219C9101785C2B200D19252 /* CoreGraphics.framework */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		166740CC196DA37100B91C92 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = Library/Frameworks/ShinobiCharts.framework; sourceTree = DEVELOPER_DIR; };
+		166740CF196ECC8B00B91C92 /* TrafficLightColumnSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficLightColumnSeries.h; sourceTree = "<group>"; };
+		166740D0196ECC8B00B91C92 /* TrafficLightColumnSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficLightColumnSeries.m; sourceTree = "<group>"; };
 		7219C9091785C2B200D19252 /* IndividualPointStyling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndividualPointStyling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7219C90C1785C2B200D19252 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7219C90E1785C2B200D19252 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		166740CE196ECC5800B91C92 /* Chart Series */ = {
+			isa = PBXGroup;
+			children = (
+				166740CF196ECC8B00B91C92 /* TrafficLightColumnSeries.h */,
+				166740D0196ECC8B00B91C92 /* TrafficLightColumnSeries.m */,
+			);
+			name = "Chart Series";
+			sourceTree = "<group>";
+		};
 		7219C9001785C2B200D19252 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +121,7 @@
 		7219C9121785C2B200D19252 /* IndividualPointStyling */ = {
 			isa = PBXGroup;
 			children = (
+				166740CE196ECC5800B91C92 /* Chart Series */,
 				7219C91B1785C2B200D19252 /* AppDelegate.h */,
 				7219C91C1785C2B200D19252 /* AppDelegate.m */,
 				7219C9241785C2B200D19252 /* ViewController.h */,
@@ -201,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166740D1196ECC8B00B91C92 /* TrafficLightColumnSeries.m in Sources */,
 				7219C9191785C2B200D19252 /* main.m in Sources */,
 				7219C91D1785C2B200D19252 /* AppDelegate.m in Sources */,
 				7219C9261785C2B200D19252 /* ViewController.m in Sources */,
