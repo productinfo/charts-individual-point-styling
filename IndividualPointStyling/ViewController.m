@@ -61,6 +61,8 @@
     [self.view addSubview:_chart];
     
     _chart.datasource = self;
+    
+    self.view.backgroundColor = _chart.backgroundColor;
 }
 
 #pragma mark - SChartDatasource methods
