@@ -61,10 +61,6 @@
     [self.view addSubview:_chart];
     
     _chart.datasource = self;
-    
-    // show the legend 
-    _chart.legend.hidden = NO;
-    _chart.legend.placement = SChartLegendPlacementInsidePlotArea;
 }
 
 #pragma mark - SChartDatasource methods
@@ -75,16 +71,6 @@
 
 -(SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
     TrafficLightColumnSeries *columnSeries = [TrafficLightColumnSeries new];
-    
-    /*
-     We won't actually see the purple color in the series as we have overwritten
-     the style in the TrafficLightColumnSeries.
-     
-     We will however see it in the legend as this is the property it reads from
-     to decide what color to render its symbols.
-     */
-    columnSeries.style.areaColor = [UIColor purpleColor];
-    
     columnSeries.selectionMode = SChartSelectionPoint;
     
     return columnSeries;
