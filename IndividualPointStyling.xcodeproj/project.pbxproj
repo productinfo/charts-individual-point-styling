@@ -173,7 +173,7 @@
 		7219C9011785C2B200D19252 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = ShinobiControls;
 			};
 			buildConfigurationList = 7219C9041785C2B200D19252 /* Build configuration list for PBXProject "IndividualPointStyling" */;
@@ -312,7 +312,6 @@
 		7219C9301785C2B200D19252 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../..",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -328,7 +327,6 @@
 		7219C9311785C2B200D19252 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../..",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
