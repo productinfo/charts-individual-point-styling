@@ -2,7 +2,7 @@
 //  ViewController.m
 //  ColumnSeries
 //
-//  Copyright 2012 Scott Logic
+//  Copyright 2014  Scott Logic
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -38,7 +38,7 @@
     _sales = @{@"Broccoli" : @5.65, @"Carrots" : @12.6, @"Mushrooms" : @8.4, @"Okra" : @0.6};
 	
     // Create the chart
-    CGFloat margin = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 10.0 : 50.0;
+    CGFloat margin = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 20.0 : 50.0;
     _chart = [[ShinobiChart alloc] initWithFrame:CGRectInset(self.view.bounds, margin, margin)];
     _chart.title = @"Grocery Sales Figures";
     
